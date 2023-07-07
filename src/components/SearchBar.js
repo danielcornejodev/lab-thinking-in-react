@@ -4,9 +4,11 @@ export default function SearchBar() {
   return (
     <div id='search-div'>
         <label>Search</label>
-        <input type="text" id="search-bar" name="search-bar" />
-        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"></input>
-        <label for="vehicle1">Only show products in stock</label>
+        <input type="search" id="search-bar" name="search-bar" />
+        <div>
+            <input type="checkbox" id="show-products" name="show-products" />
+            <label for="show-products">Only show products in stock</label>
+        </div>
     </div>
   )
 }
